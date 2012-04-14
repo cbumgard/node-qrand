@@ -11,6 +11,9 @@ var qrand = require('../lib/qrand.js')
   , hexStr = ''
 ;
 
-qrand.getRandomHexOctets(argv.l, function(octet) {
+qrand.getRandomHexOctets(argv.l, function(octet, count) {
   process.stdout.write(octet);
+  if (count === argv.l - 1) { // last octet
+    process.stdout.write('\n');
+  }
 });

@@ -8,4 +8,8 @@ See here for more info: [http://photonics.anu.edu.au/qoptics/Research/qrng.php](
 `npm install qrand`
 
 ## Usage
+For example to generate a random string of 10 hex octets:
+
 `node test/get-qrand.js -l 10`
+
+Example output: `bdd81dc887d84899cf3b`
