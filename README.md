@@ -8,4 +8,4 @@ See here for more info: [http://photonics.anu.edu.au/qoptics/Research/qrng.php](
 `npm install qrand`
 
 ## Usage
-TBD
+`node test/get-qrand.js -l 10`
