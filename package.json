@@ -2,16 +2,18 @@
   "author": "Chris Bumgardner <cbumgard@gmail.com>",
   "name": "qrand",
   "description": "A quantum random number generator for node.js.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/cbumgard/node-qrand",
   "repository": {
     "type": "git",
     "url": "git@github.com:cbumgard/node-qrand.git"
   },
-  "dependencies": {},
+  "dependencies": {
+		"optimist": "0.3.x"
+	},
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": ">= v0.6.12"
   }
 }
