@@ -18,7 +18,7 @@ Which should output something 32 random hex characters (16 octets):
 
 ## Using as a Library
 
-Add to your project's package.json depenency array:
+Add to your project's package.json dependency array:
 
     "dependencies": {
       "qrand": "0.1.x"
