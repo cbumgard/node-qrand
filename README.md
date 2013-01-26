@@ -31,4 +31,4 @@ From your project you can now use this library as follows:
     var qrand = require('qrand');
     qrand.getRandomHexOctets(16, function(err, octets) {
       console.log(octets.join(''));
-    }
+    });
