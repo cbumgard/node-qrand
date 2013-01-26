@@ -4,12 +4,31 @@
 Gets N-length random numbers from the ANU Quantum Random Number Generator
 See here for more info: [http://photonics.anu.edu.au/qoptics/Research/qrng.php](http://photonics.anu.edu.au/qoptics/Research/qrng.php)
 
-## Installation
-`npm install qrand`
+## Installation (Global)
 
-## Usage
-For example to generate a random string of 10 hex octets:
+`npm install -g qrand`
 
-`node test/get-qrand.js -l 10`
+Then try it out by running:
 
-Example output: `bdd81dc887d84899cf3b`
+`qrand -l 16`
+
+Which should output something 32 random hex characters (16 octets):
+
+`028251ba71420a4b8b0a343333b7445a`
+
+## Using as a Library
+
+Add to your project's package.json depenency array:
+
+    "dependencies": {
+      "qrand": "0.1.x"
+    }
+
+Then run `npm install`
+
+From your project you can now use this library as follows:
+
+    var qrand = require('qrand');
+    qrand.getRandomHexOctets(16, function(err, octets) {
+      console.log(octets.join(''));
+    }
