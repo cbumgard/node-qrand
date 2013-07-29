@@ -16,7 +16,7 @@
     "node": ">= v0.6.12"
   },
   "bin": {
-    "qrand": "./test/get-qrand.js"
+    "qrand": "./bin/qrand.js"
   },
   "main": "./lib/qrand"
 }
